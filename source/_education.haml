@@ -1,0 +1,43 @@
+.row
+  .large-12
+    %h3 EDUCATION 
+
+- year_column = ['Dec 2013', 'Jul 2012', 'Jun 2011', 'Jun - Aug 2009', 'Sep - Dec 2009']
+- uni_column = ['University of Pennsylvania', 'University of Cambridge, Murray Edwards College', 'University of Washington', 'Beijing Film Academy', 'University of Washington Comparative Literature Program' ]
+- location_column = ['Philadelphia, PA', 'Cambridge, UK', 'Seattle, WA', 'Beijing, China', 'Paris, France']
+- year_column.each_with_index do |y, i|
+  .row
+    .large-2.columns 
+      = y
+    .large-7.columns
+      %strong
+        = uni_column[i]
+    .large-3.columns
+      = location_column[i]
+
+/ Master in Computer and Information Technology (GPA: 3.53/4.00)
+/     Coursework: Software Engineering, Databases, Entrepreneurship, Web Design 
+
+/ Jul 2012 
+/  
+/ Master of Philosophy in Philosophy 
+/ M.Phil Thesis: The Trouble with Perfection – Kitsch and its Vicissitudes 
+/ Research Interests: Aesthetics, Philosophy of Technology 
+/ Cambridge, UK 
+
+/ Jun 2011  
+/ University of Washington 
+/ Bachelor of Arts, Magna Cum Laude (GPA: 3.89/4.00) 
+/ Majors: Philosophy (Honors), Comparative Literature, and Cinema Studies 
+/ Honors: Phi Beta Kappa, Annual Dean’s List (2008 – 2011) 
+/ Senior Essay: Authorship 2.0 and the Deadlocks of Intellectual Property 
+/ Seattle, WA 
+
+/ Jun - Aug 2010 Beijing Film Academy  
+/ Chinese cinema, Visual Culture and Politics 
+/ Beijing, China 
+
+/ Sep – Dec 2009  
+/ University of Washington Comparative Literature Program 
+/ French cinema, Literary Theory and Criticism 
+/ Paris, France 
